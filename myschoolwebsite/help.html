@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body id=>
+<header>
+<h2>Help</h2>
+</header>
+
+</div>
+
+
+    
+        <th>  <a href="index.html">back</a> </th>
+    
+
+
+
+
+<button type="button" class="collapsible">how to press buttons </button></button>
+<div class="content">
+  <p>
+      if you're on a computer just press your key buttons on your keyboard. if you are woundering how to click stuff you already know how as proof you had 
+     to click on the box to open it
+  </p>
+</div>
+<button type="button" class="collapsible">what is the school logo</button>
+<div class="content">
+  <p> this is Northrop's logo <img src="pics/northrop.jpeg" alt="Northrop" width="100px" > i hope this helps
+ 
+    </p>
+</div>
+<button type="button" class="collapsible">what teacher do i contact for ______</button>
+<div class="content">
+  <p>
+      you can find teacher contact on the contact page here <a href="contact.html">contact</a> the contact page will have phone numbers leading to people who can 
+      help 
+  </p>
+</div>
+<button type="button" class="collapsible">is this a question</button>
+<div class="content">
+  <p>
+      depends is this an answer 
+  </p>
+</div>
+<button type="button" class="collapsible">can you help me</button>
+<div class="content">
+  <p>
+    obviously not if only there was webpage for people who have questions or need help
+  </p>
+</div>
+<button type="button" class="collapsible">what sports are at northrop</button>
+<div class="content">
+  <p>
+    northrop has many sports which in clude the following 
+    Baseball (boys only)<br>
+    softball (girls only)<br>
+    Basketball <br>
+    Cross Country <br>
+    Football <br>
+    Golf <br>
+    Soccer <br>
+    Swimming <br>
+    Tennis <br>
+    Track & Field <br>
+    Volleyball <br>
+    Wrestling (boys only) <br>
+    gymnastics <br>
+    
+    
+
+
+    
+  </p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<footer>
+    designed bt jonny sims 	&copy;2023
+</footer>
+
+</body>
+</html>

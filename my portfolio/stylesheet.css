@@ -1,0 +1,23 @@
+
+body {
+    background-image: url(images/intersection.webp);
+}
+
+.bigstuff {
+    background-color: white;
+    width: 200px;
+    height: 100x;
+    margin: 100px auto;
+    padding: 50px;
+}
+#bigwords {
+    margin: 0px auto;
+    display: inline-block;
+    font-family: "Lucida handwriting"
+    ;
+}
+.bigtext {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+

@@ -1,0 +1,18 @@
+h1 {
+ color: #EF6703;
+}
+body{
+    text-align: center;
+    background-color: purple;
+}
+#Notes {
+    margin: auto;
+    padding: 10px 40px;
+    width: fit-content;
+    background-color: #c0c0c0;
+    text-align: left;
+    font-size: 30px;
+}
+#Q{
+    text-align: left;
+}

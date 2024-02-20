@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sims p6 js-3</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>
+        sims jonny p6 js-3
+    </h1>
+
+    <h2>Internal vs External Scripting</h2>
+    <div id="Notes">
+        <ul>
+            <li><b><u>INTERNAL</u></b> JS statements are written <u>INSIDE</u> the document (index.html) with 'script' elements.</li>
+            <li><b><u>EXTERNAL</u></b> scripting uses a JS src attribute to call a file like this: <img src="scriptExample.png"></li>
+            <ul>
+                <li style="list-style-type: '* '">All the JS Statements are then written in the assigned JS src file.</li>
+                <li style="list-style-type: '* '">Our assigned JS src file is <u>main.js</u> <b>NOT</b> <u>fileName.js</u></li>
+                <li style="list-style-type: '* '">Our JS src file needs to be in our (root) project folder to work with way.</li>
+                <li style="list-style-type: '* '">We'll place our <img src="scriptExample.png"> element at the bottom of the head.</li>
+                <li style="list-style-type: '* '">External Scripting is safer, faster, and separates HTML and JS for organization.</li>
+                <li style="list-style-type: '* '">'script' elements are for HTML only NOT JS src files.</li>
+            </ul>
+        </ul>
+    </div>
+
+    <ol id="Q">
+       <li>In line 6 - What is happening?</li>
+       <ul> <li>it's titleing the document</li></ul>
+
+        <li> line 7 - What is happening?</li>
+       <ul> <li>it's linking the style sheet</li></ul>
+
+        <li>In line 8 - What is happening?</li>
+        <ul><li>it's linking the java sciprt </li></ul>
+
+       <li>how the DIV box is grey when their technically is no DIV box rule in the CSS stylesheet.</li>
+       <ul><li>the div is grey by default</li></ul>
+
+         <li>In line 21 - what is the src attribute doing and why is it needed?</li>
+        <ul><li>it's linking a picture and the picture wouldn't load without the src</li></ul>
+
+        <li>What is the PARENT of the ul element in line 22-29?</li>
+        <ul><li>the li tag</li></ul>
+
+        <li> element(s) are the CHILDREN of the ul element in line 22-29?</li>
+        <ul><li> the li's and their text </li></ul> 
+
+      <li> What does the symbol on line 33 do?</li>
+        <ul><li>it makes a comment in the code without having anything pop up in the website</li></ul>
+
+     <li> What does the symbol on line 80 do?</li>
+      <ul> <li>it ends the comment></li></ul>
+
+       <li> Why do lines 33-80 not show up on the output?</li>
+       <ul><li>because it's a comment and it doesn't effect the code</li></ul>
+
+      <li> How is everything centered in the body, but not in the DIV (I am aware that the DIV itself is centered, I am addressing its content).</li>
+        <ul><li>everythin in the body is alligned center but the text isn't in the body it's in the div so the body rules don't apply </li></ul>
+
+       <li> Why is EXTERNAL scripting better than INTERNAL scripting?</li>
+       <ul><li>it's better for organization </li></ul>
+
+       <li>In your stylesheet, what is the rule "margin: auto;" doing to #Notes?</li>
+       <ul><li>it's alligning the element to the center</li></ul> 
+
+       <li>In your stylesheet, what is the rule "width: fit-content;" doing to #Notes?</li>
+       <ul><li>it sets the width of the element to the minimum width of it's content </li></ul>
+
+      <li> In the stylesheet, what are all the text strings "'* '" doing?</li>
+     <ul><li>it's changin the dot on the unordered list </li></ul>
+    </ol>
+
+
+    <!-- 
+        Breakdown of steps:
+        
+        1. Create the Project Folder: Lastname P# - JS3.
+        2. Create the index.html File with a Boilerplate.
+        3. Update the <title> to: Lastname P# - JS3. 
+        4. Type all the "Breakdown of Steps:" as HTML comments inside the <body> (as you complete them). 
+            *All <body> code will go ABOVE the comments.
+        5. Create a style.css File.
+        6. <link> the style.css File in the <head>. 
+        7. Write a CSS rule in style.css that makes ALL h1s #EF6703. 
+        8. In the <body> (above the Breakdown of Steps comments) - create an h1 with a text string of
+            Firstname Lastname P# - JS3
+        9. Create a main.js File.
+        10. In the <head> connect the main.js file to your document (index.html) with this
+            HTML parent: <script src="main.js"></script>
+            *Note we can also place it at the end of the body - that would ensure all the HTML is loaded before any JS statements are ran.
+        11. Download the scriptExample.png image file to your JS3 Folder: 
+            *It is attached to the assignment.
+            *Without this image file in your (root) project folder, the img code below will not run on your page.
+        12. In the main.js write: alert(document.title);
+        13. In the style.css create a rule for the body that centers all text.
+        14. In the style.css create a rule for an id called Notes that looks like this:
+                #Notes {
+                    margin: auto;
+                    padding: 10px 40px;
+                    width: fit-content;
+                    background-color: #c0c0c0;
+                    text-align: left;
+                    font-size: 30px;
+                }
+        15. In your document (index.html), in the <body> add this information:
+            <h2>Internal vs External Scripting</h2>
+            <div id="Notes">
+                <ul>
+                    <li><b><u>INTERNAL</u></b> JS statements are written <u>INSIDE</u> the document (index.html) with 'script' elements.</li>
+                    <li><b><u>EXTERNAL</u></b> scripting uses a JS src attribute to call a file like this: <img src="scriptExample.png"></li>
+                    <ul>
+                        <li style="list-style-type: '* '">All the JS Statements are then written in the assigned JS src file.</li>
+                        <li style="list-style-type: '* '">Our assigned JS src file is <u>main.js</u> <b>NOT</b> <u>fileName.js</u></li>
+                        <li style="list-style-type: '* '">Our JS src file needs to be in our (root) project folder to work with way.</li>
+                        <li style="list-style-type: '* '">We'll place our <img src="scriptExample.png"> element at the bottom of the head.</li>
+                        <li style="list-style-type: '* '">External Scripting is safer, faster, and separates HTML and JS for organization.</li>
+                        <li style="list-style-type: '* '">'script' elements are for HTML only NOT JS src files.</li>
+                    </ul>
+                </ul>
+            </div>
+    -->
+</body>
+</html>
